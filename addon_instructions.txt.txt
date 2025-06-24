@@ -1,0 +1,94 @@
+# StopMotionProduction Add-on Instructions
+
+## English
+Welcome to the StopMotionProduction Add-on! This tool helps you create stop-motion animations and apply unique procedural shaders.
+
+**Stop Motion Studio:**
+1.  **Activate StopMotion (SM) Studio:** Check this box in the "Render Properties" > "Stop Motion Renderer" panel to enable stop-motion features.
+2.  **FPS:** Select your desired frames per second for the stop-motion animation (e.g., 6 FPS).
+3.  **Export Images:** If checked, individual images for each stop-motion frame will be exported to a subfolder named `[folder_name]_images`.
+4.  **Export Video:** If checked, a video file will be rendered using the stop-motion frames.
+5.  **Folder:** Specify the base folder name for your output.
+6.  **Bake All Objects / Apply Stop Motion Bake:** Select an object with animation. If "Bake All Objects" is checked, it will bake all animatable objects in the scene. Otherwise, it will only bake the active object. This converts smooth animation into stepped, stop-motion-like animation. **Warning:** This modifies your animation curves.
+7.  **Restore Original Animation:** Reverts the baked animation to its original state if an original action was stored.
+
+**StopMotion Shader:**
+1.  **Access:** Go to the 3D Viewport, then open the "N" panel (Sidebar) and find the "SM-Shader" tab.
+2.  **Shader:** Choose a procedural shader from the dropdown list (e.g., Clay Soft, Oleo Hard).
+3.  **Create Shader Material:** Click this button to create the selected material. It will be added to your Blender project's material list. **Note:** This button *does not* automatically assign the material to the active object. You will need to manually assign it in the Materials Properties panel for your desired object.
+
+---
+
+## Español
+¡Bienvenido al Add-on StopMotionProduction! Esta herramienta te ayuda a crear animaciones stop-motion y a aplicar shaders procedurales únicos.
+
+**Estudio de Stop Motion:**
+1.  **Activate StopMotion (SM) Studio:** Marca esta casilla en el panel "Render Properties" > "Stop Motion Renderer" para activar las funciones de stop motion.
+2.  **FPS:** Selecciona los fotogramas por segundo deseados para la animación stop-motion (ej. 6 FPS).
+3.  **Export Images:** Si está marcado, se exportarán imágenes individuales para cada fotograma stop-motion a una subcarpeta llamada `[nombre_de_carpeta]_images`.
+4.  **Export Video:** Si está marcado, se renderizará un archivo de video utilizando los fotogramas stop-motion.
+5.  **Folder:** Especifica el nombre base de la carpeta para tu salida.
+6.  **Bake All Objects / Apply Stop Motion Bake:** Selecciona un objeto con animación. Si "Bake All Objects" está marcado, horneará todos los objetos animados en la escena. De lo contrario, solo horneará el objeto activo. Esto convierte la animación suave en una animación escalonada, similar al stop-motion. **Advertencia:** Esto modifica tus curvas de animación.
+7.  **Restore Original Animation:** Revierte la animación horneada a su estado original si se almacenó una acción original.
+
+**Shader StopMotion:**
+1.  **Acceso:** Ve a la Vista 3D, luego abre el panel "N" (Sidebar) y busca la pestaña "SM-Shader".
+2.  **Shader:** Elige un shader procedural de la lista desplegable (ej. Clay Soft, Oleo Hard).
+3.  **Create Shader Material:** Haz clic en este botón para crear el material seleccionado. Se añadirá a la lista de materiales de tu proyecto de Blender. **Nota:** Este botón *no* asigna automáticamente el material al objeto activo. Deberás asignarlo manualmente en el panel de Propiedades de Materiales para el objeto deseado.
+
+---
+
+## Português
+Bem-vindo ao Add-on StopMotionProduction! Esta ferramenta ajuda você a criar animações stop-motion e aplicar shaders procedurais exclusivos.
+
+**Estúdio Stop Motion:**
+1.  **Activate StopMotion (SM) Studio:** Marque esta caixa no painel "Render Properties" > "Stop Motion Renderer" para ativar os recursos de stop motion.
+2.  **FPS:** Selecione a taxa de quadros por segundo desejada para a animação stop-motion (ex: 6 FPS).
+3.  **Export Images:** Se marcado, imagens individuais para cada quadro de stop-motion serão exportadas para uma subpasta chamada `[nome_da_pasta]_images`.
+4.  **Export Video:** Se marcado, um arquivo de vídeo será renderizado usando os quadros de stop-motion.
+5.  **Folder:** Especifique o nome base da pasta para a sua saída.
+6.  **Bake All Objects / Apply Stop Motion Bake:** Selecione um objeto com animação. Se "Bake All Objects" estiver marcado, ele fará o bake de todos os objetos animáveis na cena. Caso contrário, ele fará o bake apenas do objeto ativo. Isso converte a animação suave em uma animação em passos, semelhante ao stop-motion. **Aviso:** Isso modifica suas curvas de animação.
+7.  **Restore Original Animation:** Reverte a animação "baked" para o seu estado original se uma ação original foi armazenada.
+
+**Shader StopMotion:**
+1.  **Acesso:** Vá para a Janela 3D, abra o painel "N" (Barra Lateral) e encontre a aba "SM-Shader".
+2.  **Shader:** Escolha um shader procedural na lista suspensa (ex: Clay Soft, Oleo Hard).
+3.  **Create Shader Material:** Clique neste botão para criar o material selecionado. Ele será adicionado à lista de materiais do seu projeto Blender. **Observação:** Este botão *não* atribui automaticamente o material ao objeto ativo. Você precisará atribuí-lo manualmente no painel de Propriedades de Materiais para o objeto desejado.
+
+---
+
+## Deutsch
+Willkommen zum StopMotionProduction Add-on! Dieses Tool hilft Ihnen, Stop-Motion-Animationen zu erstellen und einzigartige prozedurale Shader anzuwenden.
+
+**Stop Motion Studio:**
+1.  **Activate StopMotion (SM) Studio:** Aktivieren Sie dieses Kontrollkästchen im Bereich "Render Properties" > "Stop Motion Renderer", um die Stop-Motion-Funktionen zu aktivieren.
+2.  **FPS:** Wählen Sie Ihre gewünschten Bilder pro Sekunde für die Stop-Motion-Animation (z.B. 6 FPS).
+3.  **Export Images:** Wenn aktiviert, werden einzelne Bilder für jedes Stop-Motion-Bild in einen Unterordner namens `[Ordnername]_images` exportiert.
+4.  **Export Video:** Wenn aktiviert, wird eine Videodatei aus den Stop-Motion-Bildern gerendert.
+5.  **Folder:** Geben Sie den Basisordnernamen für Ihre Ausgabe an.
+6.  **Bake All Objects / Apply Stop Motion Bake:** Wählen Sie ein Objekt mit Animation aus. Wenn "Bake All Objects" aktiviert ist, werden alle animierbaren Objekte in der Szene gebacken. Andernfalls wird nur das aktive Objekt gebacken. Dies wandelt flüssige Animationen in gestufte, Stop-Motion-ähnliche Animationen um. **Warnung:** Dies ändert Ihre Animationskurven.
+7.  **Restore Original Animation:** Stellt die gebackene Animation in ihren ursprünglichen Zustand zurück, falls eine ursprüngliche Aktion gespeichert wurde.
+
+**StopMotion Shader:**
+1.  **Zugriff:** Gehen Sie zum 3D-Viewport, öffnen Sie dann das "N"-Panel (Seitenleiste) und suchen Sie die Registerkarte "SM-Shader".
+2.  **Shader:** Wählen Sie einen prozeduralen Shader aus der Dropdown-Liste (z.B. Clay Soft, Oleo Hard).
+3.  **Create Shader Material:** Klicken Sie auf diese Schaltfläche, um das ausgewählte Material zu erstellen. Es wird der Materialliste Ihres Blender-Projekts hinzugefügt. **Hinweis:** Diese Schaltfläche weist das Material *nicht* automatisch dem aktiven Objekt zu. Sie müssen es manuell im Materialeigenschaften-Panel für Ihr gewünschtes Objekt zuweisen.
+
+---
+
+## Italiano
+Benvenuti nell'Add-on StopMotionProduction! Questo strumento ti aiuta a creare animazioni stop-motion e ad applicare shader procedurali unici.
+
+**Studio Stop Motion:**
+1.  **Activate StopMotion (SM) Studio:** Seleziona questa casella nel pannello "Render Properties" > "Stop Motion Renderer" per abilitare le funzioni stop-motion.
+2.  **FPS:** Seleziona i fotogrammi al secondo desiderati per l'animazione stop-motion (es. 6 FPS).
+3.  **Export Images:** Se selezionato, le singole immagini per ogni fotogramma stop-motion verranno esportate in una sottocartella denominata `[nome_cartella]_images`.
+4.  **Export Video:** Se selezionato, verrà renderizzato un file video utilizzando i fotogrammi stop-motion.
+5.  **Folder:** Specifica il nome della cartella base per l'output.
+6.  **Bake All Objects / Apply Stop Motion Bake:** Seleziona un oggetto con animazione. Se "Bake All Objects" è selezionato, verranno cotti tutti gli oggetti animabili nella scena. Altrimenti, verrà cotto solo l'oggetto attivo. Questo converte l'animazione fluida in un'animazione a passi, simile allo stop-motion. **Avvertenza:** Questo modifica le tue curve di animazione.
+7.  **Restore Original Animation:** Ripristina l'animazione cotta al suo stato originale se un'azione originale è stata memorizzata.
+
+**Shader StopMotion:**
+1.  **Accesso:** Vai nella Vista 3D, quindi apri il pannello "N" (Sidebar) e trova la scheda "SM-Shader".
+2.  **Shader:** Scegli uno shader procedurale dall'elenco a discesa (es. Clay Soft, Oleo Hard).
+3.  **Create Shader Material:** Fai clic su questo pulsante per creare il materiale selezionato. Verrà aggiunto all'elenco dei materiali del tuo progetto Blender. **Nota:** Questo pulsante *non* assegna automaticamente il materiale all'oggetto attivo. Dovrai assegnarlo manualmente nel pannello Proprietà Materiali per l'oggetto desiderato.
