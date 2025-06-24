@@ -54,7 +54,7 @@ It simplifies the creation of renders with an authentic "stop motion" look and o
 ### Stop Motion Renderer Module
 
 1.  **Open Panel:** In Blender, go to the `Render Properties` (the camera icon). You will find a new panel called **"Stop Motion Renderer"**.
-    ![Screenshot Stop Motion Panel]([path/to/your/stop_motion_panel_screenshot.png](https://github.com/jebussCoral/StopMotionStudio_BlenderAddon/blob/main/images/material2.png?raw=true))
+    ![Screenshot Stop Motion Panel](images/material2.png)
     
 2.  **Activate Studio:** Check the **"Activate StopMotion (SM) Studio"** box.
 3.  **Configure Options:**
