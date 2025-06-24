@@ -1,7 +1,7 @@
 # StopMotionProduction Addon for Blender
 
-![Banner Image](path/to/your/banner_image.png)
-*(Replace with an attractive image representing your addon)*
+![Banner Image](images/banner.gif)
+
 
 ---
 
@@ -40,11 +40,11 @@ It simplifies the creation of renders with an authentic "stop motion" look and o
 
 ## 🚀 Installation
 
-1.  **Download:** Download the `StopMotionProduction_vX.X.X.zip` file from the [GitHub releases page](https://github.com/YourGitHubUsername/StopMotionProduction/releases) or from [Blender Market](https://blendermarket.com/creators/your-profile/products/stopmotionproduction). *(Make sure to change the URLs)*
+1.  **Download:** Download the `StopMotionProduction_v1.2.zip` file from the [GitHub releases page](https://github.com/YourGitHubUsername/StopMotionProduction/releases) or from [Blender Market](https://blendermarket.com/creators/your-profile/products/stopmotionproduction). *(Make sure to change the URLs)*
 2.  **Open Blender:** Launch Blender.
 3.  **Preferences:** Go to `Edit > Preferences > Add-ons`.
 4.  **Install:** Click the `Install...` button.
-5.  **Select ZIP:** Navigate to where you downloaded the `StopMotionProduction_vX.X.X.zip` file and select it. Then click `Install Add-on`.
+5.  **Select ZIP:** Navigate to where you downloaded the `StopMotionProduction_v1.2.zip` file and select it. Then click `Install Add-on`.
 6.  **Activate:** Once installed, search for "StopMotionProduction" in the add-on list and **check the box** next to its name to activate it.
 
 ---
@@ -54,45 +54,67 @@ It simplifies the creation of renders with an authentic "stop motion" look and o
 ### Stop Motion Renderer Module
 
 1.  **Open Panel:** In Blender, go to the `Render Properties` (the camera icon). You will find a new panel called **"Stop Motion Renderer"**.
-    ![Screenshot Stop Motion Panel](images/material2.png)
+    ![Screenshot Stop Motion Panel](images/panel.png)
     
 2.  **Activate Studio:** Check the **"Activate StopMotion (SM) Studio"** box.
-3.  **Configure Options:**
+    
+    ![Screenshot Stop Motion Panel](images/panel2.png)
+   
+4.  **Configure Options:**
     * **FPS:** Choose the desired frames per second for the stop motion effect.
     * **Export Images:** Check if you want to export individual images for each rendered frame.
     * **Export Video:** Check if you want to export a compiled video directly (Blender will use the VSE if not already in use).
     * **Folder:** Define the name of the folder where your renders and videos will be saved.
-4.  **Animation Bake:**
+5.  **Animation Bake:**
     * **Bake All Objects:** If checked, the "bake" will affect all animated objects in your scene. If unchecked, it will only affect the active/selected object.
     * Click **"Apply Stop Motion Bake"** to convert your fluid animation into stepped animation with the selected FPS.
     * Click **"Restore Original Animation"** to revert objects to their original animation.
-    ![Screenshot Bake & Restore](path/to/your/bake_restore_screenshot.png)
-    *(Replace with a screenshot of the Bake/Restore section)*
-5.  **Render:** Click **"Render from SM Studio"** to start the rendering process with the applied stop motion settings.
+    ![Screenshot Bake & Restore](images/baked.png)
+    *(Baked on active object)*
+    ![Screenshot Bake & Restore](images/prebaked.png)
+    *(restored animation object)*
+6.  **Render:** Click **"Render from SM Studio"** to start the rendering process with the applied stop motion settings.
 
 ### StopMotion Shader Module
 
 1.  **Open Panel:** In the 3D Viewport, open the sidebar (by pressing `N`). You will find a new tab called **"SM-Shader"**.
-    ![Screenshot Shader Panel Location](path/to/your/shader_panel_location_screenshot.png)
-    *(Replace with a screenshot showing the location of the SM-Shader panel)*
-2.  **Select Shader:** Choose the desired shader from the "Shader" dropdown menu.
-    ![Screenshot Shader Selection](path/to/your/shader_selection_screenshot.png)
-    *(Replace with a screenshot of the shader selection dropdown)*
-3.  **Create Material:** Click the **"Create Shader Material"** button (with the material icon).
+   
+    ![Screenshot Shader Panel Location](images/material2.png)
+   
+3.  **Select Shader:** Choose the desired shader from the "Shader" dropdown menu.
+4.  
+    ![Screenshot Shader Selection](images/SM-materialsidebar.png)
+    
+5.  **Create Material:** Click the **"Create Shader Material"** button (with the material icon).
     * The new material will be created and appear in your Blender file's material list.
     * You can apply this material to any object just like any other Blender material.
 
 ### Visual Shader Examples
 
-*(This is where your images and GIFs will be crucial. You can organize them by shader type or show comparisons)*
+**Example: Clay Soft Animation shader**
 
-**Example: Clay Soft Animation**
-![Clay Soft Animation Example](path/to/your/clay_soft_example.gif)
-*(Replace with a GIF or image example of the Clay Soft Animation shader)*
+![Clay Soft Animation Example](images/Clay_soft_Animation_Eevee-Cycles.gif)
+
+**Example: Clay hard Animation shader**
+
+![Clay Hard Animation procedural shader](images/Clay_hard_Animation_Eevee-Cycles.gif)
+
+**Example: Clay Live Animation shader**
+
+![Clay Live  Animation procedural shader](images/Clay_live_Animation_Eevee-Cycles.gif)
+
+**Example: Oleo hard Animation**
+
+![Oleo hard  Animation shader](images/Oleo_hard_Animation_Eevee.gif)
+
+
+**Example: Oleo soft Animation**
+
+![Oleo soft  Animation shader](images/Oleo_soft%20Animation_Eevee.gif)
 
 **Example: Oleo Live Animation**
-![Oleo Live Animation Example](path/to/your/oleo_live_example.gif)
-*(Replace with a GIF or image example of the Oleo Live Animation shader)*
+
+![Oleo soft  Animation shader](images/Oleo_live_Animation_Eevee.gif)
 
 **Comparison: Original Animation vs. Baked Animation**
 ![Original vs Baked Comparison](path/to/your/original_vs_baked_comparison.gif)
@@ -110,22 +132,6 @@ It simplifies the creation of renders with an authentic "stop motion" look and o
     * A: The addon will generate a unique name for the new material (e.g., "Clay_soft_Animation_Eevee-Cycles.001") to prevent overwriting existing ones.
 * **Q: Where are the renders saved?**
     * A: Renders are saved to the output path you've configured in Blender's render properties (`Output Properties > Output`). The addon will create subfolders (`_tmp`, `_images`) within that path.
-
----
-
-## 📄 License
-
-This addon is distributed under the [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html). *(Or the license you have chosen)*
-
----
-
-## 📞 Support & Contact
-
-If you encounter any bugs, have suggestions, or need assistance, feel free to contact me:
-
-* **Email:** your.email@example.com *(Replace with your email)*
-* **GitHub Issues:** [Open a new issue here](https://github.com/YourGitHubUsername/StopMotionProduction/issues) *(Replace with your GitHub issues link)*
-* **Social Media:** [Your Twitter/X](https://twitter.com/yourhandle), [Your Instagram](https://www.instagram.com/yourhandle) *(Other social media you use)*
 
 ---
 
